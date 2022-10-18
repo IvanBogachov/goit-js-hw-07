@@ -2,6 +2,7 @@ import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
 console.log(galleryItems);
+// console.log(window.event);
 
 const gallery = document.querySelector('.gallery')
 const items = []
@@ -25,7 +26,7 @@ galleryItems.forEach(element => {
 
 gallery.append(...items)
 
-gallery.addEventListener('click', e => {
+document.addEventListener('click', e => {
     e.preventDefault();
     if (e.target.nodeName !== 'IMG') {
 		return
@@ -36,9 +37,14 @@ gallery.addEventListener('click', e => {
 
     instance.show()
     
-    gallery.addEventListener('keydown', e => {
+
+    document.addEventListener('keydown', handleKeypress);
+
+	function handleKeypress(e){
+		console.log(e);
 		if (e.key === 'Escape') {
-			instance.close()
+			instance.close(document.removeEventListener('keydown', handleKeypress))
 		}
-	})
+	}
 })
+
