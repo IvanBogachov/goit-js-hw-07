@@ -35,15 +35,13 @@ document.addEventListener('click', e => {
     const selectedImage = e.target.getAttribute('data-source')
 	const instance = basicLightbox.create(`<img src="${selectedImage}" width="800" height="600">`,{
 		onShow: () => window.addEventListener('keydown', onEscKeyPress),
-		onClose: () => {window.removeEventListener('keydown', onEscKeyPress)},
-	}
-	
-	)
+		onClose: () => window.removeEventListener('keydown', onEscKeyPress),
+	})
 
     instance.show()
 
 	function onEscKeyPress(e){
-		// console.log(e);
+		console.log(e);
 		if (e.code === 'Escape') {
 			instance.close()
 		}
