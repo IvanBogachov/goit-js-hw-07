@@ -41,7 +41,7 @@ document.addEventListener('click', e => {
     instance.show()
 
 	function onEscKeyPress(e){
-		console.log(e);
+		// console.log(e);
 		if (e.code === 'Escape') {
 			instance.close()
 		}
