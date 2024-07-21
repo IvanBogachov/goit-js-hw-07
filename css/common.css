@@ -10,6 +10,7 @@ body {
   background-color: #ffffff;
   color: #212121;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 /* reset styles */
@@ -47,7 +48,6 @@ ul {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.34;
-  letter-spacing: 0.04em;
   margin-bottom: 16px;
   color: #2e2f42;
 }
@@ -60,7 +60,6 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #2e2f42;
   border: 1px solid #808080;
   border-radius: 4px;
@@ -89,10 +88,50 @@ ul {
   padding: 8px 16px;
   line-height: 1.5;
 }
-/* #name-output {
-  font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.34;
-    letter-spacing: 0.04em;
-} */
+
+/* task-4 */
+.login-form {
+  max-width: 408px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2e2f42;
+}
+
+.login-form button {
+  display: block;
+  margin-top: 16px;
+  min-width: 86px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.login-form button:hover,
+.login-form button:focus {
+  background-color: #6c8cff;
+}
