@@ -19,7 +19,7 @@ catigItem.forEach(item => {
 catigList.classList.add(`js-catigories`);
 
 catigItem.forEach((item) => {
-  item.classList.add(`catigitem`);
+  item.classList.add(`js-catig-item`);
 });
 
 titleAll.forEach((item) => {
