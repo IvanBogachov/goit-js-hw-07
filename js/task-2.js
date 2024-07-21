@@ -24,3 +24,21 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+const createGalleryCard = (pictyreInfo) => {
+  return `
+    <li class="js-gallery-item">
+      <a href="#">
+        <img src="${pictyreInfo.url}" alt="${pictyreInfo.alt}">
+      </a>
+    </li>
+    `;
+};
+const galleryCardsTemplate = images
+  .map((imgInfo) => createGalleryCard(imgInfo))
+  .join("");
+
+const galListEl = document.querySelector(".gallery");
+
+galListEl.insertAdjacentHTML("beforeend", galleryCardsTemplate);
+
+
