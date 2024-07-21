@@ -122,7 +122,7 @@ ul {
   min-width: 86px;
   padding: 8px 16px;
   background-color: #4e75ff;
-  color: #fff;
+  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   border: none;
@@ -133,5 +133,41 @@ ul {
 
 .login-form button:hover,
 .login-form button:focus {
+  background-color: #6c8cff;
+}
+
+/* task-5 */
+.widget {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 100px 88px;
+  max-width: 345px;
+  max-height: 280px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.widget p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #2e2f42;
+}
+.widget button {
+  font-weight: 500;
+  display: block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.widget button:hover,
+.widget button:focus {
   background-color: #6c8cff;
 }
