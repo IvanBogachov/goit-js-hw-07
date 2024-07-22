@@ -14,14 +14,12 @@ function createBoxes(amount) {
   boxContainer.innerHTML = "";
 
   let size = 30;
+  let boxesHTML = "";
   for (let i = 0; i < amount; i++) {
-    const div = document.createElement("div");
-    div.style.width = `${size}px`;
-    div.style.height = `${size}px`;
-    div.style.backgroundColor = getRandomHexColor();
-    boxContainer.appendChild(div);
+    boxesHTML += `<div style="width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()};"></div>`;
     size += 10;
   }
+  boxContainer.innerHTML = boxesHTML;
 }
 
 function destrBoxes() {
